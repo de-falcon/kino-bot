@@ -2,8 +2,8 @@ services:
   - type: web
     name: kino-bot
     env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python kino_bot.py"
     pythonVersion: 3.11.8
-    region: oregon  # yoki frankfurt, kerak bo‘lsa o‘zgartirasiz
-
+    region: frankfurt
