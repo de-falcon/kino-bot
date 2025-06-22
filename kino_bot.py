@@ -1,8 +1,10 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = '7869815186:AAGJSIX-qK7SLoI190RsGeWGNc8eOQAXjjs'
-CHANNEL_USERNAME = '@forever_cinemauz'
+import os  # Fayl boshiga qo‘shilsin
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME")
 
 # Movie nomlari: file_id yoki forward qilish uchun kanal post ID
 MOVIES = {
